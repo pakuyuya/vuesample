@@ -1,0 +1,110 @@
+
+/* util
+ -----------------------------*/
+
+.p10 { width: 10%; }
+.p80 { width: 80%; }
+
+.left   { text-align:left;   }
+.center { text-align:center; }
+.right  { text-align:right;  }
+
+/* outside
+ -----------------------------*/
+ 
+body {
+  background-color: #ffffff;
+}
+
+#app {
+  margin: 100px auto;
+}
+
+.frame { 
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #ffffff;
+  border: solid 2px #333333;
+}
+
+
+/* indicator
+ -----------------------------*/
+
+.indicator {
+  display: flex;
+  border-bottom: solic 1px #eeeeee;
+  background: linear-gradient(#fefefe, #f8f8f8);
+}
+
+@font-face {
+  font-family: '6809chargen';
+  src: url('font/6809-chargen/6809-chargen.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'arcadeclassic';
+  src: url('font/arcadeclassic/ARCADECLASSIC.TTF')  format('truetype');
+}
+
+.countor {
+  display:block;
+  font-size: 24px;
+  font-family: arcadeclassic;
+  margin: 5px;
+  padding: 5px 5px;
+  line-height: 24px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-command {
+  padding: 10px 10px;
+  border-radius: 0px;
+}
+
+/* field
+ ------------------------------*/
+
+.line {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.tile {
+  line-height:40px;
+  text-align : center;
+  
+  height: 40px;
+  width:  40px;
+  border: solid 1px #eeeeee;
+}
+
+.tile.is-hide {
+  cursor : pointer;
+  background-color:#eeeeee;
+  border-color: #dddddd #e8e8e8 #e8e8e8 #dddddd;
+}
+
+.tile.is-hide:hover {
+ background-color: #dddd99;
+}
+
+.tile.is-open {
+  background-color:#ffffff;
+  border-color: #e3e3e3 #d5d5d5 #d5d5d5 #e3e3e3;
+}
+
+.tile.is-bomb {
+  background-color:#ffeeee;
+  border-color: #e3e3e3 #d5d5d5 #d5d5d5 #e3e3e3;
+}
+
+/* config
+ ------------------------------*/
+
+.gameconfig {
+  margin-top :20px;
+  padding: 10px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Vue.js</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/display.css" />
+  <link rel="stylesheet" href="css/minesweeper.css" />
+  
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="vue.min.js"></script>
+  <script src="minesweeper.js"></script>
+</head>
+<body>
+  <div id="app">
+    <section>
+      <header>
+        <span class="countor">{{ remainnum }}</span>
+        <button type="button" v-on:click="reset"></button>
+        <span class="countor">{{ time }}</span>
+      </header>
+      <section>
+        <div v-for="line in lines">
+          <li v-for="tile in line.tiles"><span class="tile is-{{ state }}">{{ label }}</span></li>
+        </div>
+      </section>
+    </section>
+  </div>
+</body>
+</html>
